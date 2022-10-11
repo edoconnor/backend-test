@@ -25,7 +25,7 @@ connectToDatabase(ATLAS_URI)
     app.use("/employees", employeeRouter);
     // start the Express server
     app.listen(5200, () => {
-      console.log("Server Running on " + PORT);
+      console.log("Server is on " + PORT);
     });
   })
   .catch((error) => console.error(error));
