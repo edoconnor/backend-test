@@ -24,7 +24,7 @@ connectToDatabase(ATLAS_URI)
     app.use(cors());
     app.use("/employees", employeeRouter);
     // start the Express server
-    app.listen(5200, () => {
+    app.listen(process.env.PORT || 5200, () => {
       console.log("Server is on " + PORT);
     });
   })
